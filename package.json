@@ -1,6 +1,6 @@
 {
   "name": "cloudfuncs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cloudfuncs helper scripts and cli",
   "main": "server.js",
   "scripts": {
