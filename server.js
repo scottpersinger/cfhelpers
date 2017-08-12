@@ -22,7 +22,7 @@ app.post('/', function(req, res) {
 	var payload = req.body.payload
 
 	try {
-		require("./" + func[0])[func[1]](payload, null, function(err, result) {
+		require(process.cwd() + "/" + func[0])[func[1]](payload, null, function(err, result) {
 			if (err) {console.log(`Function ${func[1]} returned error: ${err}`)}
 			console.log(`Function ${func[1]} result: ${result}`)
 		})
