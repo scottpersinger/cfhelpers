@@ -10,4 +10,6 @@ Settlement API -> ReconcilerRunner: EBATs
 Payment Providers -> Bank Transfer: $
 Bank Transfer -> Parser Runner: BAT
 Parser Runner -> ReconilerRunner: PBAT
+Note over ReconcilerRunner: PBATs reconciled with EBATs
+Note right of ReconcilerRunner: -> ReconciliationGroup
 ```
