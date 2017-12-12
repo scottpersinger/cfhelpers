@@ -4,8 +4,9 @@ Payment Providers -> Settlement Adapters: settlement file
 Note over Settlement Adapters: Ops Pipeline \n PPROSettlementFileExplorer
 Settlement Adapters -> Settlement API: /transfers
 Settlement Adapters -> Settlement API: /transfers/:id/close
+```
+```diagram-sequence
 Settlement API -> ReconcilerRunner: EBATs
 Payment Providers -> Bank Transfer: $
 Bank Transfer -> Parser Runner: BAT
-
 ```
